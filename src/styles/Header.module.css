@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.nav {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: #fff;
+}
+
+.logo {
+  scale: 0.9;
+
+  a {
+    text-decoration: none;
+  }
+
+  .logoName {
+    border: 1.5px solid rgb(1, 54, 115);
+    border-radius: 3px;
+    padding: 1px;
+
+    p {
+      font-size: 17px;
+      color: rgba(1, 54, 115, 0.921);
+      margin: 3.5px 1px 2.8px 1px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+
+    span {
+      color: #fff;
+      background-color: rgba(1, 54, 115, 0.89);
+      margin-right: 2px;
+      padding: 3px 4px;
+      border-radius: 2px;
+      font-weight: 500;
+    }
+  }
+}
+
+.logo:hover {
+  scale: 0.95;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+}
+
+.searchContent {
+  margin-right: 30px;
+  display: flex;
+}
+
+.searchOuter {
+  display: flex;
+  height: 35px;
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(1, 54, 115);
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.searchLogo {
+  color: #ffff;
+}
+
+.searchBar {
+  height: 35px;
+  width: 300px;
+  padding: 0 10px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.searchBar:focus {
+  outline: none;
+}
+
+.navLinks a {
+  text-decoration: none;
+  font-size: 16px;
+  color: rgba(1, 29, 62, 0.812);
+  font-weight: 600;
+}
+
+.navLinks a:hover {
+  color: rgb(1, 1, 108);
+}
+
+.activeLink {
+  color: #ff4d4f !important;
+  transition: 0.3s !important;
+}
+
+.navLinks li {
+  list-style: none;
+}
+
+.cartButton {
+  padding: 10px;
+  background-color: rgb(1, 54, 115);
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.cartCount {
+  font-size: 14px;
+  color: rgb(0, 28, 60);
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-size: 12px;
+    font-weight: bolder;
+  }
+}
+
+.cartIcon {
+  font-size: 18px;
+}

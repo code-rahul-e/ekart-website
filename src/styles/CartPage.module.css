@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.mainCartPage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.insideCards table td,
+th {
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.insideCards table td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+}
+
+.insideCards table tr:last-child td {
+    border-bottom: none;
+}
+
+.remButton {
+    background-color: rgb(255, 106, 0);
+    padding: 10px;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.insideCards .imgContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: left;
+
+    img {
+        height: 150px;
+    }
+}
+
+.partRight {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .ratingButton {
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        gap: 5px;
+        color: orange;
+
+        h3 {
+            font-size: 13px;
+        }
+    }
+
+    .discount {
+        color: rgb(1, 54, 115);
+    }
+}
+
+.errorMessage {
+    height: calc(100vh - 350px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+}
+
+/* counter */
+.countings {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+
+    .btn {
+        padding: 6px 10px;
+    }
+}
+
+/* final price */
+.finalPrice {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 40px;
+
+    .btnContainer{
+        display: flex;
+        gap: 2rem;
+
+        .clearBtn{
+            background-color: red;
+        }
+    }
+
+    button {
+        padding: 10px;
+        background-color: rgb(1, 127, 1);
+        color: white;
+        border: none;
+        border-radius: 3px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: rgb(1, 90, 1);
+    }
+}
